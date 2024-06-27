@@ -20,6 +20,7 @@ body{
 .right{
     width: 75vw;
     margin: 16px 0px;
+    position: relative;
 }
 
 .home{
@@ -53,6 +54,9 @@ body{
     position: relative;
 }
 
+.logo img{
+    height: 40px;
+}
 
 .footer{
     position: absolute;
@@ -74,13 +78,16 @@ body{
     display: flex;
     justify-content: space-between;
     background: #343434;
+    height: 60px;
+    align-items: center;
 }
 
 .header > *{
     padding: 20px;
 }
-.spotifyPlaylist{
+.NomoPlaylist{
     padding: 16px;
+    position: relative;
 }
 
 .card *{
@@ -103,19 +110,91 @@ body{
     gap:10px;
     flex-wrap: wrap;
    overflow-y: scroll;
-   max-height: 80vh;
+   max-height: 70vh;
 }
 
 .card{
-    width: 200px;
+    width: 180px;
+    height: 280px;
     padding: 10px;
     border-radius: 5px;
     background-color: #161616;
-    position: relative;
+
    
 }
 
 .card img{
     width: 100%;
     object-fit: contain;
+}
+
+.buttons> *{
+margin: 0 12px;
+}
+
+.signupbtn{
+    background-color: #343434;
+    font-weight: 500;
+    color: grey;
+    opacity: 100;
+    border: none;
+    cursor: pointer;
+}
+
+.signupbtn:hover{
+    font-size: 1.1 rem;
+    color: white ;
+    font-weight: bold;
+}
+
+.loginbtn{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.loginbtn:hover{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.playbar{
+    position: absolute;
+    bottom:0;
+    background-color: rgb(88, 128, 88);
+    width: 100%;
+    padding: 12px;
+
+}
+
+.songButtons{
+    display: flex;
+    justify-content: center;
+    gap:15px
+}
+
+.songList{
+    padding: 0 45px;
+}
+
+
+.songList ul li{
+    display: flex;
+    list-style: decimal;
+    gap:34px;
+    cursor: pointer;
+    padding: 12px 0px;
+    border: 1px dotted rgb(41, 39, 39);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.playnow{
+    display: flex;
 }
